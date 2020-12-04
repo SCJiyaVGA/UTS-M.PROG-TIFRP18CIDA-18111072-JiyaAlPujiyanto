@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Dashboard">
+    <ImageView
+        android:id="@+id/profil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/jiya"
+        ></ImageView>
+    <TextView
+        android:id="@+id/halo"
+        android:text="Hello!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profil"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        ></TextView>
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/halo"
+        android:textColor="@android:color/white"
+        android:textSize="20sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:text="Login Time"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggal"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        ></TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/listView"
+        android:layout_width="120dp"
+        android:layout_height="350dp"
+        android:background="@android:color/white"
+        android:layout_alignParentRight="true"
+        ></RelativeLayout>
+    <ListView
+        android:id="@+id/interest"
+        android:layout_width="120dp"
+        android:layout_height="350dp"
+        android:layout_alignParentRight="true"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        ></ListView>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/listView"
+        >
+        <ImageView
+            android:id="@+id/Where"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/where"
+            android:layout_centerInParent="true"
+            ></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Where is everyone?"
+            android:layout_below="@+id/Where"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="270dp"
+            ></TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
